@@ -1,6 +1,8 @@
 from sklearn.preprocessing import LabelEncoder
 from collections import defaultdict
 import itertools
+import category_encoders as ce
+
 
 import pandas as pd
 import scipy.stats as scs
@@ -44,6 +46,15 @@ def encoder(dataFr):
     dataFr_noenc=dataFr_enc.apply(lambda x: d[x.name].inverse_transform(x))
     
     return dataFr_enc,dataFr_noenc
+
+def nom_encoder(dFr,y,enc):
+    
+    '''encoding a dataframe of categorical features
+    use encoders from category_encoders package'''
+    
+    dFr_enc=enc.fit_transform(dFr,y)
+    return dFr_enc
+
 
 
 def conf_matrix(ser1,ser2):
