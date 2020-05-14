@@ -76,10 +76,10 @@ def drop_columns(dataFr,perc=40):
     newDf=pd.DataFrame()
     for col in dataFr.columns.values:
         cond1=nulls_perc(dataFr[col])[1]>perc
-        cond2=len(dataFr[col].unique())==1
-        #tot=len(dataFr[col])
-        #maj=dataFr[col].value_counts().apply(lambda val: val/tot)>0.75
-        #cond2=maj.sum()==1
+        #cond2=len(dataFr[col].unique())==1
+        tot=len(dataFr[col])
+        maj=dataFr[col].value_counts().apply(lambda val: val/tot)>0.75
+        cond2=maj.sum()==1
         
         if cond1 or cond2:
             dropped_cols.append(col)
