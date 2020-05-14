@@ -22,7 +22,7 @@ def fill_missing(series):
     cond_list=idf.nulls_cat(series)
     for cond in cond_list[1:]: series[cond]='unknown'
         
-def reduce_cat(series,num=20):
+def reduce_cat(series,num=21):
     
     '''replace entry that is not in the top num with the word "other" '''
     
@@ -55,6 +55,16 @@ def nom_encoder(dFr,y,enc):
     dFr_enc=enc.fit_transform(dFr,y)
     return dFr_enc
 
+
+def encode_bool(series):
+    
+    '''encode series of boolean to float,
+    fill missing values'''
+    
+    series.replace({True:1, False:0},inplace=True)
+    series.fillna(2,inplace=True)
+
+    return series
 
 
 def conf_matrix(ser1,ser2):
