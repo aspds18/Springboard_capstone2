@@ -11,7 +11,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-import infodf as idf
+import src.utils.infodf as idf
 
 def fill_missing(series):
     
