@@ -1,4 +1,4 @@
-# Predicting Tanzania's water pumps maintenance
+# Predicting Tanzania water pumps maintenance
 This project is an example of applying survival analyses concepts for maintenance. The purpose is to build a model to predict the survival probability and hazard function of a water pump, providing a tool to evaluate predictive maintenance and thus creating both an economic and social benefit. 
 ## Dataset
 https://www.drivendata.org/competitions/7/pump-it-up-data-mining-the-water-table/
