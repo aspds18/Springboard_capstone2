@@ -8,15 +8,12 @@ https://s3.amazonaws.com/drivendata/data/7/public/4910797b-ee55-40a7-8668-10efd5
 Data wrangling and visualization techniques are used to prepare the dataset for the model and to gain insight on the available data. Some regions have less functional water pumps than others, and in general it looks like not much maintenance has been performed over the years.
 Three algorithms have been considered for modeling, i.e. Cox regression, SVM and Random Survival Forest. The latter is the best performing one, with a score of 0.797 on a test set.
 A full report and a slide deck are available:
-
-
+https://github.com/aspds18/Springboard_capstone2/blob/master/docs/Tanzania_water_pumps_report.docx
+https://github.com/aspds18/Springboard_capstone2/blob/master/docs/Tanzania_water_pumps.pdf
 ## Source code and requirements
-The code is written in Python and uses some common packages plus the scikit-survival library.
-Environment requirements:
-https://github.com/aspds18/Springboard_capstone2/blob/master/tanzania.yml 
+The code is written in Python and uses some common packages plus the scikit-survival library. Environment requirements: https://github.com/aspds18/Springboard_capstone2/blob/master/tanzania.yml 
 
-Complete code:
-https://github.com/aspds18/Springboard_capstone2/blob/master/tanzaniawp.ipynb
+Complete code: https://github.com/aspds18/Springboard_capstone2/blob/master/tanzaniawp.ipynb
 ## References:
 1.	Pölsterl, S., Navab, N., and Katouzian, A., Fast Training of Support Vector Machines for Survival Analysis. Machine Learning and Knowledge Discovery in Databases: European Conference, ECML PKDD 2015, Porto, Portugal, Lecture Notes in Computer Science, vol. 9285, pp. 243-259 (2015)
 2.	Pölsterl, S., Navab, N., and Katouzian, A., An Efficient Training Algorithm for Kernel Survival Support Vector Machines. 4th Workshop on Machine Learning in Life Sciences, 23 September 2016, Riva del Garda, Italy
